@@ -16,11 +16,40 @@ This provides following classes which implement [msg-interface](https://www.npmj
 - MsgFloat32
 - MsgFloat64
 
+### MsgInt8
+
+```js
+var MsgInt8 = require("msg-number").MsgInt8;
+
+var msg = new MsgInt8(-128);
+
++msg; // => -128
+
+msg.toString(); // => '-128'
+
+var msgToBuffer = require("msg-interface").msgToBuffer;
+msgToBuffer(msg); // => <Buffer d0 80>
+```
+
+### MsgUInt16
+
+```js
+var MsgUInt16 = require("msg-number").MsgUInt16;
+
+var msg = new MsgUInt16(65535);
+
++msg; // => 65535
+
+msg.toString(); // => '65535'
+
+var msgToBuffer = require("msg-interface").msgToBuffer;
+msgToBuffer(msg); // => <Buffer cd ff ff>
+```
+
 ### MsgInt32
 
 ```js
 var MsgInt32 = require("msg-number").MsgInt32;
-var MsgInt32 = require("./").MsgInt32;
 
 var msg = new MsgInt32(-1234567890);
 
@@ -66,7 +95,6 @@ msgToBuffer(msg); // => <Buffer cf 11 22 10 f4 7d e9 81 15>
 
 ```js
 var MsgFloat32 = require("msg-number").MsgFloat32;
-var MsgFloat32 = require("./").MsgFloat32;
 
 var msg = new MsgFloat32(-0.5);
 
