@@ -1,6 +1,6 @@
 # msg-number - msgpack number container
 
-[![npm version](https://badge.fury.io/js/msg-number.svg)](http://badge.fury.io/js/msg-number) [![Build Status](https://travis-ci.org/kawanet/msg-number.svg?branch=master)](https://travis-ci.org/kawanet/msg-number)
+[![npm version](https://badge.fury.io/js/msg-number.svg)](http://badge.fury.io/js/msg-number) [![Build Status](https://travis-ci.org/kawanet/msg-number.svg?branch=master)](https://travis-ci.org/kawanet/msg-number) [![Coverage Status](https://coveralls.io/repos/github/kawanet/msg-number/badge.svg)](https://coveralls.io/github/kawanet/msg-number)
 
 This provides following classes which implement [msg-interface](https://www.npmjs.com/package/msg-interface).
 
